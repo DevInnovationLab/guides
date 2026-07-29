@@ -11,6 +11,7 @@ vendor/
 
 # Ignore files from local rendering
 Gemfile.lock
+_config_dev.yml
 
 # the classic nuisance stuff
 .DS_store
