@@ -7,18 +7,26 @@ url: https://devinnovationlab.github.io/guides/
 
 # Point to content
 collections:
-  guides:
-    permalink: "guides/"
+  irb:
+    permalink: "irb/"
     output: true
-    name: Coding guides
-  principles:
-    permalink: "principles/"
+    name: IRB & ethics
+  data-collection:
+    permalink: "data-collection/"
     output: true
-    name: Analytics principles
-  templates:
-    permalink: "templates/"
+    name: Data collection
+  working-with-data:
+    permalink: "working-with-data/"
     output: true
-    name: DIL templates
+    name: Working with data
+  writing-code:
+    permalink: "writing-code/"
+    output: true
+    name: Writing code
+  research-resources:
+    permalink: "research-resources/"
+    output: true
+    name: Research resources
   resources:
     permalink: "resources/"
     output: true
