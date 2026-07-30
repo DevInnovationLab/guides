@@ -46,6 +46,8 @@ title: Paper submission checklist
 - [ ] Check if there are specific requirements for exhibits (such as file format and resolution).
 - [ ] Check guidelines for disclosure, funding, and conflict of interest statements.
 
+**Further reading**
+
 [More on citation styles](https://pitt.libguides.com/citationhelp){: .btn .btn-more }{:target="_blank"} 
 [JEL classification system](https://www.aeaweb.org/econlit/jelCodes.php){: .btn .btn-more }{:target="_blank"}
 
@@ -78,6 +80,8 @@ title: Paper submission checklist
 - [ ] Weighting method used is described in the notes.
 - [ ] The estimation procedure used is clearly indicated in the table, title or notes (e.g. OLS, probit, logit).
 
+**Further reading**
+
 [More on reviewing regression outputs](https://blogs.worldbank.org/impactevaluations/crowd-sourced-checklist-top-10-little-things-drive-us-crazy-regression-output){: .btn .btn-more }{:target="_blank"}
 
 
@@ -93,6 +97,8 @@ title: Paper submission checklist
 - [ ] Graph notes include all the necessary information for it to be understood as a self-standing exhibit
 - [ ] Harmonize decimal places (if present) across all graphs/ figures
 - [ ] Make sure image sizes are consistent.
+
+**Further reading**
 
 [Chrome extension to simulate color blindness](https://chrome.google.com/webstore/detail/colorblindly/floniaahmccleoclneebhhmnjgdfijgg?hl=en#:~:text=Colorblindly&text=Simulates%20colorblindness%20in%20your%20web,those%20users%20have%20on%20websites){: .btn .btn-more }{:target="_blank"}
 
@@ -114,5 +120,7 @@ title: Paper submission checklist
 - [ ] All references cited in the text, tables and notes are included in the bibliography.
 - [ ] All references listed in the bibliography are cited in the paper.
 - [ ] If using a numbered citation style, all references are numbered in the same order as they are cited in the text.
+
+**Further reading**
 
 [Reference management software: Zotero](https://www.zotero.org/support/quick_start_guide){: .btn .btn-more }{:target="_blank"}

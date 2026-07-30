@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Don’t repeat yourself
+grand_parent: Data principles
 parent: Writing code
 nav_order: 3
 ---
@@ -12,6 +13,6 @@ Say, for example, that you are running regressions of multiple outcome variables
 
 An extension of the DRY rule is to not spend time reinventing the wheel. **If you are trying to do something that does not seem easy to implement, spend some time looking for an existing function from reputed sources to do it**. Using canned functions will make your code easier to read and less buggy. Developers usually share their solutions in the form of packages or libraries which include extensive error-handling features that are not thought of when first implementing a task. For example, both R and Stata have commands that allow you to create a balance table with a single line of code, so writing code from scratch to summarize variables, test for differences in means, and organize this information into a table means repeating other people’s work, which is not a great use of your time.
 
-<span class="fs-8">
-[Next section]({{ site.baseurl }}{% link writing-code/be-kind-to-your-reader.md %}){: .btn .btn-more }
-</span>
+---
+
+[Next section]({{ site.baseurl }}{% link data-principles/be-kind-to-your-reader.md %}){: .btn .btn-more }

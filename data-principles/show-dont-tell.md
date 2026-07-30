@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Show, don’t (just) tell
+grand_parent: Data principles
 parent: Working with data
 nav_order: 3
 ---
@@ -16,9 +17,11 @@ Whichever of these formats you choose, you will still need to decide whether a g
 
 **Presenting polished plots is key for any publication**. They will typically be a reader’s first interaction with the publication’s results, and therefore are an important aspect of how its message is communicated. However, creating good visual representations of data can be difficult, and it is a learned skill.  The resulting urge to neglect the fine-tuning of plots is only human, but **at least one person in any project team will need to take the time to learn the details of polishing graphical data**. This includes being able to modify characteristics of plots and tables such as dimensions, resolutions, and fonts, as well as rendering and exporting to different formats (including TeX, Word, PPT and also PDF/EPS). Make sure you identify the person on your team who can do this in the lead up to producing results.
 
+**Further reading**
+
 [Table vs graph](https://www.storytellingwithdata.com/blog/2011/11/visual-battle-table-vs-graph){: .btn .btn-more }{:target="_blank"}
 [**Internal** -- DIL templates for papers, memos, presentations and reports](https://github.com/DevInnovationLab/DIL-Templates){: .btn .btn-internal }{:target="_blank"}
 
-<span class="fs-8">
-[Next section]({{ site.baseurl }}{% link working-with-data/start-simple.md %}){: .btn .btn-more }
-</span>
+---
+
+[Next section]({{ site.baseurl }}{% link data-principles/start-simple.md %}){: .btn .btn-more }

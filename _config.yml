@@ -11,18 +11,14 @@ collections:
     permalink: "irb/"
     output: true
     name: IRB & ethics
+  data-principles:
+    permalink: "data-principles/"
+    output: true
+    name: Data principles
   data-collection:
     permalink: "data-collection/"
     output: true
     name: Data collection
-  working-with-data:
-    permalink: "working-with-data/"
-    output: true
-    name: Working with data
-  writing-code:
-    permalink: "writing-code/"
-    output: true
-    name: Writing code
   research-resources:
     permalink: "research-resources/"
     output: true

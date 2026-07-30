@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Touch whatever you want...
+grand_parent: Data principles
 parent: Working with data
 nav_order: 1
 ---
@@ -18,9 +19,10 @@ Some researchers find it easy to write a lot of statistical modeling code while 
 
 By doing this you will often be able to spot potential irregularities in your inputs (indicating problems with data or a need to tweak your modeling approach), hypothesize data generating process (more on which below), and get a feeling for how to generalize from the present data into new contexts in the future.
 
+**Further reading**
+
 [R packages for exploratory data analysis](https://arxiv.org/pdf/1904.02101.pdf){: .btn .btn-more }{:target="_blank"}
 
+---
 
-<span class="fs-8">
-[Next section]({{ site.baseurl }}{% link working-with-data/dont-move-anything.md %}){: .btn .btn-more }
-</span>
+[Next section]({{ site.baseurl }}{% link data-principles/dont-move-anything.md %}){: .btn .btn-more }

@@ -50,6 +50,8 @@ title: Data dictionary template
 | `gear_ratio`   | Gear ratio             | Continuous  |                   |                           |
 | `foreign`      | Car origin             | Binary      |                   | 0 Domestic <br> 1 Foreign |
 
+**Get this template**
+
 [Download Word version](https://github.com/DevInnovationLab/guides/raw/gh-pages/research-resources/data-readme.docx){: .btn .btn-more }{:target="_blank"}
 
 

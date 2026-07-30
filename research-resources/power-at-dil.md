@@ -10,7 +10,7 @@ nav_order: 1
 
 It is crucial that every project has a standing file - ideally a notebook combining code and text - that showcases power calculations.
 Over its lifecycle, different RAs, RPs, and PIs will contribute to it.
-It is thus essential that [coding principles are strictly followed](https://devinnovationlab.github.io/guides/writing-code/writing-code.html) as in any other piece of work.
+It is thus essential that [coding principles are strictly followed](https://devinnovationlab.github.io/guides/data-principles/data-principles.html) as in any other piece of work.
 Such a document will also help the team think clearly about research design and how to best communicate it at a very early stage.
 
 -   Always start with a quick abstract summary of descriptive statistics: mean and standard deviation of outcomes, cluster sizes, estimates for the intra-cluster correlation, and expected effect sizes (with references to the respective literature).

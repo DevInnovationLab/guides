@@ -1,6 +1,7 @@
 ---
 layout: default
 title: …and please don’t move anything
+grand_parent: Data principles
 parent: Working with data
 nav_order: 2
 ---
@@ -13,9 +14,11 @@ This principle results in a hard rule for the storage of raw data: because it ca
 
 For example, you may download data from a website in such a format that makes analyzing it with statistical software very difficult. Instead of opening it in Excel, making changes to it, and replacing the file, you should: (i) save the data as it was originally downloaded, (ii) load it in statistical software and write code making the desired changes, (iii) save the derived dataset in a separate folder from the original one. This will allow you and other people to tell which dataset was created by you and which one comes from an external source. It will also guarantee that even if the website goes offline, you still have access to the original data. Finally, it will create a record of what modifications were made to the original dataset.
 
+**Further reading**
+
 [DIL data folder structure](https://github.com/DevInnovationLab/dil-template-repo/tree/main/data){: .btn .btn-more }{:target="_blank"}
 
-<span class="fs-8">
-[Next section]({{ site.baseurl }}{% link working-with-data/show-dont-tell.md %}){: .btn .btn-more }
-</span>
+---
+
+[Next section]({{ site.baseurl }}{% link data-principles/show-dont-tell.md %}){: .btn .btn-more }
 

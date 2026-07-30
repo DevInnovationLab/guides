@@ -13,8 +13,13 @@ The items on this checklist are meant to serve as a guide on what a reviewer sho
 
 During the review, read each line of code and indicate whenever you encounter any of the issues described below. This can be done by adding comments directly to the code, to a pull request, or in a separate document. If you choose the latter, you can download the checklist in Word or markdown format below. In this case, write down the lines of the code in which you have identified each potential issue. Whatever approach you take, read the code carefully, be constructive in your feedback, indicate what changes you would suggest, and point out which items are creating bugs, which ones would make the code more accessible, and [which ones are more trivial suggestions](https://stackoverflow.com/questions/27810522/what-does-nit-mean-in-hacker-speak#:~:text=Sometimes%20the%20reviewer%20will%20prefix,we'd%20like%20you%20to.&text=A%20%22nit%22%20means%20a%20trivial,it%20may%20be%20an%20acronym.), such as style issues.
 
+**Get this checklist**
+
 [Download Word version](https://github.com/DevInnovationLab/guides/raw/gh-pages/research-resources/code-review.docx){: .btn .btn-more }{:target="_blank"}
 [View markdown version](https://raw.githubusercontent.com/DevInnovationLab/guides/gh-pages/research-resources/code-review.md){: .btn .btn-more }{:target="_blank"}
+
+**Further reading**
+
 [More code review resources](https://devinnovationlab.github.io/guides/resources/git.html#code-review){: .btn .btn-more }{:target="_blank"}
 
 ---

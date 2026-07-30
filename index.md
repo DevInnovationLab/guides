@@ -14,7 +14,7 @@ This guide is meant to be used by anyone in the Lab who is working with analytic
 It should serve as a standing reference that can be consulted by anyone at the Lab. If you are visiting it for the first time, here is what we recommend:
 
 1. **Add this website your bookmarks bar** and come back to it whenever you need it.   
-1. **Read Working with data and Writing code.** These are basic principles to make the use of analytics at DIL more transparent and reproducible. They apply to any activity with data and code, no matter what software is being used. It does not get into a lot of details, but links to plenty of additional resources.
+1. **Read Data principles.** These are basic principles to make the use of analytics at DIL more transparent and reproducible. They apply to any activity with data and code, no matter what software is being used. It does not get into a lot of details, but links to plenty of additional resources.
 1. **Check IRB & ethics and Data collection** for what's expected before and while you're in the field, and **Research resources** for guides and templates once you're analyzing and writing up.
 1. **Explore additional resources**. These are external links, ad-hoc materials and lab templates.
 
