@@ -4,9 +4,18 @@ title: How to perform power calculations for your project, step by step
 grand_parent: Research resources
 parent: Power calculations
 nav_order: 2
+type: explanation
+audience: Anyone at DIL planning sample size or a power calculation before launching an RCT or survey
+last_reviewed: 2026-07-30
 ---
 
 ## How to Perform Power Calculations for your Project, Step by Step
+
+<div class="ref-summary" markdown="1">
+This page walks through the sequence of steps for planning a power calculation for a project: what information to gather first, how to get a rough sample size estimate, and how that estimate gets refined. Use it to understand the order of the steps, not as the calculation itself.
+</div>
+
+<hr class="section-divider">
 
 First, we have to gather intelligence on the three most fundamental things:
 
@@ -20,6 +29,25 @@ First, we have to gather intelligence on the three most fundamental things:
 
 In case we want (or have) to assign treatment at a cluster or group level, we also need to gather information on the degree of similarity within each cluster or group.
 This descriptive statistic is often referred to as the Intra-cluster Correlation Coefficient (ICC).
+
+<hr class="section-divider">
+
+## Start with a scenario
+
+> You are designing an RCT that will assign treatment at the village level rather than at the individual level. You have already found a household survey from a similar context to estimate the mean and standard deviation of your outcome variable, and you have looked at evaluations of comparable interventions to guess at a plausible effect size.
+{: .example}
+
+Is that enough information to run the power calculation?
+
+<details markdown="1">
+<summary>Think it through, then expand</summary>
+
+Not quite. The mean, the standard deviation, and the effect size are the three fundamental inputs, but because treatment is assigned at the village (cluster) level rather than at the individual level, you also need to know the degree of similarity within each village, the Intra-cluster Correlation Coefficient (ICC). Without it, a sample size calculated as if individuals were assigned independently will understate how many villages (and individuals within them) are actually needed to detect the effect.
+
+Notice also what would not be a shortcut here: running a small pilot to estimate these parameters is not advised, since pilots are typically too small to give reliable estimates of variance or ICC.
+</details>
+
+<hr class="section-divider">
 
 The relevant pieces of information can be gathered through a review of similar studies that were carried out in the past, the analysis of surveys and/or administrative data, or, ideally, a combination of the two.
 It is not advised to rely on pilot studies for power calculations due to small sample size problems.

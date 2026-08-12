@@ -2,18 +2,31 @@
 layout: default
 title: Stata
 parent: External resources
+type: reference
+audience: Anyone at DIL using Stata for data work
+last_reviewed: 2026-07-30
 ---
 
-# Stata resources
+## Stata resources
+
+<div class="ref-summary" markdown="1">
+A curated list of external Stata resources: courses, consultation materials, sample code, and useful packages.
+</div>
+
+<hr class="section-divider">
 
 ## Courses
 - [DIME's Stata Training](https://github.com/worldbank/dime-stata-training)
+
+<hr class="section-divider">
 
 ## Consultation materials
 - [Daniel Feenberg's Stata for very large datasets](https://www.nber.org/stata/efficient/)
 - [DIME Analytics Stata Style Guide](https://worldbank.github.io/dime-data-handbook/coding.html#the-dime-analytics-stata-style-guide)
 - [List of Stata packages for difference-in-differences estimation](https://asjadnaqvi.github.io/DiD/docs/01_stata/): includes sample codes and links to package documentation and original paper
 - [Stata cheatsheets](https://www.stata.com/bookstore/stata-cheat-sheets/)
+
+<hr class="section-divider">
 
 ## Sample code
 - [Demo for exporting tables from Stata](https://github.com/worldbank/stata-tables)
@@ -22,6 +35,7 @@ parent: External resources
 - [Mostly harmless replication repository](https://github.com/vikjam/mostly-harmless-replication)
 - [Stata main script example](https://github.com/worldbank/rio-safe-space/blob/master/Reproducibility%20Package/MASTER.do)
 
+<hr class="section-divider">
 
 ## Useful packages
 - [Ben Jann's packages](http://repec.sowi.unibe.ch/stata/): includes packages to export tables (estout), customize graphs (coefplot, grstyles, palettes) and create dynamic documents (webdoc, texdoc)

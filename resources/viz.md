@@ -2,9 +2,12 @@
 layout: default
 title: Data visualization
 parent: External resources
+type: reference
+audience: Anyone at DIL looking for external data visualization resources by tool
+last_reviewed: 2026-07-30
 ---
 
-# Data visualization resources
+## Data visualization resources
 
 ## General
 

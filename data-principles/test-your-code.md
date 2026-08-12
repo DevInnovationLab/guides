@@ -4,6 +4,9 @@ title: Test your code continuously
 grand_parent: Data principles
 parent: Writing code
 nav_order: 8
+type: principle
+audience: Anyone at DIL writing or reviewing code or data work
+last_reviewed: 2026-07-30
 ---
 
 ## Test your code continuously

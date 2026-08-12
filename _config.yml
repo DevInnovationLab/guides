@@ -64,6 +64,12 @@ callouts:
   good:
     title: Good
     color: green
+  tip:
+    title: Tip
+    color: blue
+  example:
+    title: Example
+    color: purple
 
 # Plugins
 plugins:

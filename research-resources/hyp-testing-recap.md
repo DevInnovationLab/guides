@@ -4,17 +4,30 @@ title: A recap of hypoyhesis testing
 grand_parent: Research resources
 parent: Power calculations
 nav_order: 5
+type: explanation
+audience: Anyone at DIL working with an RCT who wants a refresher on the logic of hypothesis testing before working through a power calculation
+last_reviewed: 2026-07-30
 ---
 
-# Recapping Null Hypothesis Significance Testing (NHST)
+## Recapping Null Hypothesis Significance Testing (NHST)
+
+<div class="ref-summary" markdown="1">
+This page recaps the logic of (frequentist) null hypothesis significance testing - the two hypotheses, the two error types, and how significance level and power relate to them - as background for working through a power calculation elsewhere in this section.
+</div>
+
+<hr class="section-divider">
+
+## Why we need a test
 
 Estimating whether an intervention - e.g. the treatment of an RCT - had an effect on the outcome is challenging due to sampling variation: the sample average of the treatment group will most of the time look different than the one of the control group due to chance alone.
-<!-- The sample average of the treatment group will typically always look different than the one from the control group just because of sampling variation alone. -->
 It is our task as researchers to assess whether this difference is large enough in order to conclude that it is due to actual differences at the population level - or whether it is too small and therefore most likely due to sampling noise alone.
 That's where (frequentist) null hypothesis significance testing (NHST) enters.
 
+<hr class="section-divider">
+
+## Stating the hypotheses and the two errors
+
 We always start by stating the null hypothesis, $$H_0$$, which says that the effect was zero.
-<!-- Typically we want to find evidence against it. -->
 The alternative hypothesis, $$H_1$$, states that the effect was $$\delta$$ - the difference of the outcome variable between treatment and control group.
 When conducting such a test, we can make two possible errors.
 Rejecting a true null hypothesis, that is, to conclude that the intervention was effective when it was not (Type I error or "false positive").
@@ -31,6 +44,29 @@ We could also conclude that the intervention had no effect when in reality such 
 When carried out on real-world data, we will never be able to know whether a Type I or Type II error is being committed.
 We can, however, design our study as to control the probability of committing each type of error.
 
+<hr class="section-divider">
+
+## Start with a scenario
+
+> An RCT tests whether a new cash transfer program increased household savings. The estimated treatment effect is positive, but the p-value is 0.14, above the conventional $$\alpha = 0.05$$ threshold. The team concludes that the program had no effect on savings.
+{: .example}
+
+What is wrong with that conclusion?
+
+<details markdown="1">
+<summary>Think it through, then expand</summary>
+
+Failing to reject $$H_0$$ is not the same as confirming that $$H_0$$ is true. The test may simply have failed to reject a false null - a Type II error - because the study did not have enough power to detect the true effect $$\delta$$.
+
+Whether that risk was high depends on choices that should have been made before data collection: the significance level $$\alpha$$, the desired power $$1-\beta$$, the expected effect size, and the variability of the outcome. A p-value of 0.14 is consistent both with "no effect" and with "an effect too small, or a sample too noisy, for this study to detect at conventional power."
+
+What is not the fix: rerunning the test at a looser $$\alpha$$ after seeing the result. The error rates $$\alpha$$ and $$\beta$$ have to be fixed before the test is run, which is exactly the role of a power calculation done at the design stage.
+</details>
+
+<hr class="section-divider">
+
+## Significance level and power
+
 First, we have to define a significance level, $$\alpha$$.
 This is conventionally set to 0.05 for a two-sided test and represents the probability of committing a Type I error ($$P[reject\ H_0\ |\ H_0\  true]$$).
 This means that when the null is true, we won't reject it in 95% of cases.
@@ -43,8 +79,9 @@ Of course we would like power to be as high as possible, but usually a power of 
 Defining the two hypotheses, the desired significance level, and the power of the test, allows us to simultaneously control the likelihood of committing either a Type I or a Type II error.
 By looking at the hypothetical distributions of the test statistic under the null and the alternative hypothesis, we obtain critical values for the test statistic corresponding to the pre-specified error rates.
 
-<!-- shiny_hyptest on shinyapps companion here -->
+<hr class="section-divider">
 
-The [companion Shiny app](https://lehner.shinyapps.io/dil_power/) illustrates the positive role a large effect size and a low deviation of the outcome have on power.
+## Sources
 
+* [Companion Shiny app](https://lehner.shinyapps.io/dil_power/), which illustrates the positive role a large effect size and a low deviation of the outcome have on power.
 

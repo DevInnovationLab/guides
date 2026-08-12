@@ -2,14 +2,19 @@
 layout: default
 title: Git
 parent: External resources
+type: reference
+audience: Anyone at DIL who wants to learn git or improve their code review practice
+last_reviewed: 2026-07-30
 ---
 
-# Git Resources
+## Git Resources
 
 ## Learning git
 
 - [Git and GitHub learning resources](https://docs.github.com/en/get-started/quickstart/git-and-github-learning-resources): learning material provided by GitHub
 - [Alice Bartlett's Git for humans](https://speakerdeck.com/alicebartlett/git-for-humans): a short slidedeck explaining the main git concepts in an accessible language
+
+<hr class="section-divider">
 
 ## Code review 
 

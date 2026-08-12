@@ -4,20 +4,36 @@ title: Power calculations at DIL
 grand_parent: Research resources
 parent: Power calculations
 nav_order: 1
+type: reference
+audience: Anyone at DIL preparing, maintaining, or reviewing a project's power calculation summary
+last_reviewed: 2026-07-30
 ---
 
-## Guidelines for a DIL Powercalculation Summary Document
+## Power calculations at DIL
 
-It is crucial that every project has a standing file - ideally a notebook combining code and text - that showcases power calculations.
-Over its lifecycle, different RAs, RPs, and PIs will contribute to it.
-It is thus essential that [coding principles are strictly followed](https://devinnovationlab.github.io/guides/data-principles/data-principles.html) as in any other piece of work.
-Such a document will also help the team think clearly about research design and how to best communicate it at a very early stage.
+<div class="ref-summary" markdown="1">
+DIL's standard for a project's power calculation summary: a single standing file, ideally a notebook combining code and text, maintained throughout the project's lifecycle.
+</div>
 
--   Always start with a quick abstract summary of descriptive statistics: mean and standard deviation of outcomes, cluster sizes, estimates for the intra-cluster correlation, and expected effect sizes (with references to the respective literature).
--   Showcase simple power calculations from plug-in formulas first.
--   Using these as benchmarks, incorporate more sophisticated designs only afterwards and see how and why power increases (often this has to be done through simulations).
--   Always link to the folder/repository where the code is stored so anyone can always have a look at the latest, up-to-date version (ideally also push these reports to the Github repository of the respective project).
--   Every number has to be easily reproducible. If there is no replication code, then every number that was plugged into a formula has to be stated clearly.
+### Format and ownership
 
-You can find some example notebooks in the `power/examples/` folder following [this link (main branch of `internal-resources` repo, Github acces required)](https://github.com/DevInnovationLab/internal-resources/tree/main/power/examples).
+- A single standing file, ideally a notebook combining code and text, so results and the code that produces them stay together.
+- Contributed to by RAs, RPs, and PIs over the project's lifecycle. [Data principles]({{ site.baseurl }}{% link data-principles/data-principles.md %}) apply to this document as to any other code.
+
+### Content order
+
+1. An abstract summary of descriptive statistics: mean and standard deviation of outcomes, cluster sizes, estimated intra-cluster correlation, and expected effect sizes, with references to the supporting literature.
+2. Simple power calculations from plug-in formulas.
+3. More sophisticated designs, benchmarked against the plug-in results, showing how and why power changes (typically via simulation).
+
+### Reproducibility and access
+
+- Every number must be reproducible from code. Where no replication code exists, the formula inputs must be stated explicitly.
+- Linked to the folder or repository containing the underlying code, kept up to date, and ideally pushed to the project's GitHub repository.
+
+<div class="further-reading" markdown="1">
+**Further reading**
+
+[**Internal** -- Example notebooks (power/examples/, internal-resources repo)](https://github.com/DevInnovationLab/internal-resources/tree/main/power/examples){: .btn .btn-internal }{:target="_blank"}
+</div>
 

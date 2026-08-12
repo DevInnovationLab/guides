@@ -4,15 +4,16 @@ This website uses a Jekyll template. The github.io page is automatically updated
 
 ## Building and previewing your site locally
 
-Requires Ruby >= 3.0 and Bundler. From the root directory of the site:
+When rendering locally you need to manually "turn off" the option of using `remote_theme` and just use `theme` instead in `_config.yml`.
+Assuming Jekyll and Bundler are installed on your computer:
 
-1.  Run `bundle install --path vendor/bundle` (installs gems into `vendor/`, already gitignored, no `sudo` needed).
+1.  Change your working directory to the root directory of your site.
 
-2.  Run `bundle exec jekyll serve --config _config.yml,_config_dev.yml --livereload` to build your site and preview it at `localhost:4000/guides/`.
+2.  Run `bundle install`.
+
+3.  Run `bundle exec jekyll serve` to build your site and preview it at `localhost:4000`.
 
     The built site is stored in the directory `_site`.
-
-`_config_dev.yml` is a local-only override (gitignored, never committed) that swaps production's `remote_theme` for the vendored `theme` gem so the local build doesn't hit the network. It's layered on top of `_config.yml` via the `--config` flag above — `_config.yml` itself should never need manual edits.
 
 ----
 

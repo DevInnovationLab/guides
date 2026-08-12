@@ -4,9 +4,20 @@ title: Cluster randomization
 grand_parent: Research resources
 parent: Power calculations
 nav_order: 12
+type: reference
+audience: Anyone at DIL running a power calculation for a design where treatment is assigned at the group level (village, clinic, classroom, ...) rather than the individual level
+last_reviewed: 2026-07-30
 ---
 
 ## Cluster/Group Level Randomization
+
+<div class="ref-summary" markdown="1">
+This page explains why assigning treatment at the group (cluster) level rather than the individual level changes a power calculation, and gives the adjusted sample-size formulas for continuous and binary outcomes.
+</div>
+
+<hr class="section-divider">
+
+## Why clustering changes the calculation
 
 Individual randomization is typically preferred because of its statistical properties.
 Often it is not feasible, though, so we are forced to allocate treatment at a higher level of aggregation.
@@ -35,6 +46,29 @@ The general implication of ICC for power calculations is that every additional i
 A large ICC means there is a high degree of similarity of units within each cluster.
 As a consequence, less information is added by each individual.
 Adapting the formula involves some tedious algebra, but is generally straightforward.
+
+<hr class="section-divider">
+
+## Start with a scenario
+
+> Two studies plan to detect the same effect size, with the same total number of respondents $$n$$. Study A assigns individuals to treatment or control one at a time. Study B assigns whole villages, each with $$m$$ households, to treatment or control.
+>
+> A team member argues that because both studies collect data from the same number of respondents, they should end up with the same statistical power.
+{: .example}
+
+Is the team member right?
+
+<details markdown="1">
+<summary>Think it through, then expand</summary>
+
+No, and the ICC is why. In Study B, households in the same village share the cluster-level error term $$v_j$$, so a high ICC means households within a village look similar to each other. Adding another household from a village already in the sample contributes less new information than adding a household from a new village would.
+
+The gap between the two studies is exactly the **design effect** (or variance inflation factor), $$(1 + (m-1)\rho)$$, that appears in both formulas below. When $$\rho = 0$$, the design effect is 1 and the cluster formulas collapse to the individual-randomization formulas (setting cluster size to 1 makes this explicit). When $$\rho > 0$$, Study B needs a larger $$n$$ than Study A to reach the same power, and the gap grows with both $$\rho$$ and the cluster size $$m$$.
+</details>
+
+<hr class="section-divider">
+
+## Adjusted formulas
 
 ### Continuous
 

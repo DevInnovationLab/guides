@@ -3,9 +3,12 @@ layout: default
 grand_parent: Research resources
 parent: Templates
 title: Code review checklist
+type: checklist
+audience: Anyone reviewing or submitting code for a DIL project
+last_reviewed: 2026-07-30
 ---
 
-# Code review checklist
+## Code review checklist
 
 ## How to use this checklist
 
@@ -22,7 +25,7 @@ During the review, read each line of code and indicate whenever you encounter an
 
 [More code review resources](https://devinnovationlab.github.io/guides/resources/git.html#code-review){: .btn .btn-more }{:target="_blank"}
 
----
+<hr class="section-divider">
 
 ## Readability and style
 
@@ -47,6 +50,8 @@ During the review, read each line of code and indicate whenever you encounter an
 > As a rule of thumb, each script should have no more than 200 lines.
 - Are white spaces and indentation used to make the code clearer and more accessible?
 
+<hr class="section-divider">
+
 ## Correctness 
 - Does the code do what it is supposed to do? 
  > For example, does the code to construct indicators follow their definition from the documentation? Do regressions follow the model specified?
@@ -55,6 +60,8 @@ During the review, read each line of code and indicate whenever you encounter an
 - Are any values hard-coded into the code? Could they be calculated in the code instead? Could this input be defined in a different part of the code to make it more salient?
 - Are there any sanity checks being performed manually that could be automated? 
  > For example, checking if the number of observations has changed, if missing values are being introduced, if values fall within a certain range.
+
+<hr class="section-divider">
 
 ## Efficiency
 
@@ -73,6 +80,8 @@ During the review, read each line of code and indicate whenever you encounter an
 - Are outputs formatted using code, so they are ready for publication once exported?
 > For example, are all the necessary labels and notes added in the code? Are the number of decimals, font sizes and other formatting automated? 
 
+<hr class="section-divider">
+
 ## Reproducibility
 - Can you run the code from start to end? If not, can you tell why?
 - Is the code easy to run? Is it possible to simplify the transfer from one computer to another?
@@ -83,10 +92,14 @@ During the review, read each line of code and indicate whenever you encounter an
 - Are there any random processes being used in the code? If so, are they reproducible?
 > Sampling, treatment assignment and bootstrapping are examples of common tasks that involve random processes. 
 
+<hr class="section-divider">
+
 ## Good things
 - Did you learn about any new functions or packages reading this code?
 - Are there any practices you would like to also use in your work?
 - Was any task implemented in a more efficient or simpler way than you would have done?
+
+<hr class="section-divider">
 
 ## Content-specific items
 

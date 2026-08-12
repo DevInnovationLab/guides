@@ -4,6 +4,9 @@ title: Resources and references
 grand_parent: Research resources
 parent: Power calculations
 nav_order: 99
+type: reference
+audience: Anyone at DIL looking for further reading on power calculations
+last_reviewed: 2026-07-30
 ---
 
 ## Resources and references for power calculations

@@ -6,11 +6,18 @@ parent: Power calculations
 nav_order: 20
 has_children: true
 has_toc: true
+type: explanation
+audience: Anyone at DIL running power calculations who needs to go beyond the simple case - handling covariates, panel data, stratification, or multiple hypothesis testing
+last_reviewed: 2026-07-30
 ---
 
 ## Some more advanced topics
 
+<div class="ref-summary" markdown="1">
 This section covers a few selected topics that are important for statistical power and experimental design: the inclusion of covariates, panel data (i.e. multiple observations per unit over time), stratification (sometimes called blocking), and multiple hypothesis testing (MHT) corrections.
+</div>
+
+<hr class="section-divider">
 
 ### Including covariates
 
@@ -34,16 +41,18 @@ In a simple randomized experiment, controlling for baseline values of covariates
 Note that controlling for covariates affected by treatment $$D$$ would bias the estimate of $$\beta_1$$ by capturing part of its impact.
 Information on covariates should therefore be collected in baseline surveys or, if possible, from other observational data that has been collected before the experiment.
 
+<hr class="section-divider">
 
 ### Power calculations for panel data
 
-When there is also a time dimension, David McKenzie (2012) illustrated how one can increase statistical power by taking multiple measurements of the relevant outcomes at relatively short intervals.
+When there is also a time dimension, McKenzie ([2012](#sources)) illustrated how one can increase statistical power by taking multiple measurements of the relevant outcomes at relatively short intervals.
 He argues that stronger unit-specific shocks can erode the benefits of collecting additional waves of data.
 What essentially increases power in this setting is the fact that noise in the outcome variable can be averaged out over multiple collection periods.
-Burlig, Preonas, and Woerman (2020) extend his argument to within-unit serial correlation, demonstrating that higher autocorrelation in the idiosyncratic error term can similarly erode - and even reverse - the benefits of increased panel length.
+Burlig, Preonas, and Woerman ([2020](#sources)) extend his argument to within-unit serial correlation, demonstrating that higher autocorrelation in the idiosyncratic error term can similarly erode - and even reverse - the benefits of increased panel length.
 Their result reflects the analytical properties of estimators that leverage both pre- and post-treatment data and does not reflect the DD estimator over-controlling for pre-period data. 
 The implementation of these panel formulas (Burlig et al. also have simulations) is only available in Stata as of September 2023.
 
+<hr class="section-divider">
 
 ### Stratification (blocking)
 
@@ -78,7 +87,7 @@ Stratification according to those subgroups then ensures that the ratio between 
 <!-- See @KernanViscoliMakuchBrassHorwitz1999 for a classic reference for stratification in randomized trials.  -->
 In R we can e.g. use `blockTools` or `randomizr` to carry out stratification. In Stata this is usually done via `egen strata=group()`.
 
-
+<hr class="section-divider">
 
 ### Multiple hypothesis testing (MHT)
 
@@ -99,5 +108,25 @@ This is the famous procedure by Benjamini and Hochberg.
 In practice, we can use the function `p.adjust()` in R to do all of these corrections. An overview of commands in Stata for MHT can be found [on the Worldbank blog](https://blogs.worldbank.org/impactevaluations/overview-multiple-hypothesis-testing-commands-stata).
 If feasible, a more accurate way to account for multiple testing in power calculations is through simulation. The main reason is that it allows us to address the extent to which the multiple comparisons are correlated with one another and thus delivers less conservative thresholds for rejection.
 
+> Suppose a project pre-specifies $$m = 5$$ outcome variables and tests each at the conventional $$\alpha = 0.05$$ level, without any multiple testing correction.
+{: .example}
 
+What is the actual probability of at least one false rejection across the five tests, and what would the Bonferroni-adjusted threshold be for each individual test?
 
+<details markdown="1">
+<summary>Work it out, then expand</summary>
+
+Without correction, the family-wise error rate is $$1-(1-\alpha)^m = 1-(1-0.05)^5 \approx 0.226$$ - close to a 1-in-4 chance of at least one false positive, well above the nominal 5% most readers would assume from the reported significance level.
+
+The Bonferroni correction brings this back down by dividing $$\alpha$$ by the number of tests: $$0.05 / 5 = 0.01$$. Each of the five hypotheses is only rejected if its p-value falls below 0.01, not 0.05.
+
+This is also where the tradeoff shows up: as $$m$$ grows, the per-test threshold shrinks quickly, which is exactly why the correction reduces power along with the false positive rate. It is also why, when feasible, a simulation-based approach that accounts for correlation across outcomes can deliver a less conservative - and still valid - threshold.
+</details>
+
+<hr class="section-divider">
+
+## Sources
+
+McKenzie, David. 2012. ["Beyond baseline and follow-up: The case for more T in experiments."](https://doi.org/10.1016/j.jdeveco.2012.01.002) *Journal of Development Economics* 99 (2): 210-221.
+
+Burlig, Fiona, Louis Preonas, and Matt Woerman. 2020. ["Panel data and experimental design."](https://doi.org/10.1016/j.jdeveco.2020.102458) *Journal of Development Economics* 144: 102458.

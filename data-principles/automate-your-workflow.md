@@ -4,6 +4,9 @@ title: Automate your workflow from the start
 grand_parent: Data principles
 parent: Writing code
 nav_order: 7
+type: principle
+audience: Anyone at DIL writing or reviewing code or data work
+last_reviewed: 2026-07-30
 ---
 
 ## Automate your workflow from the start

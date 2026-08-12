@@ -5,13 +5,28 @@ grand_grand_parent: Selected advanced topics
 grand_parent: Research resources
 parent: Power calculations
 nav_order: 66
+type: explanation
+audience: Anyone at DIL running power calculations for a design too complex for the standard plug-in formulas (clustering, blocking, covariates, multiple arms, or multiple hypotheses)
+last_reviewed: 2026-07-30
 ---
 
 ## Calculating Power with Simulations
 
+<div class="ref-summary" markdown="1">
+This page explains why and how to calculate statistical power through simulation when analytical plug-in formulas are not flexible enough, and walks through a minimal worked example in R.
+</div>
+
+<hr class="section-divider">
+
+## When to use simulations
+
 A first step in power calculations is always the usage of the plug-in formulas we saw above.
 <!-- As soon as an experimental design gets a bit more complex, we would typically rely on our own simulations. -->
 These analytical power calculations are useful for simple comparisons. For nonparametric tests and more complex or more specific design choices, simulation-based power calculations provide more flexibility. They for complex clustering and blocking schemes (i.e. stratification), can incorporate covariates, multiple treatment arms, etc. They also have advantages when it comes to accounting for the multiplicity of testing if we want to test more than one null hypothesis.
+
+<hr class="section-divider">
+
+## What a simulation requires
 
 <!-- The basic idea is to write down an equation that describes the data generating process (DGP) and treatment assignment, including an expected effect size. -->
 <!-- This model will have a non-stochastic part (sample size, number of clusters, distribution of the sample across clusters, number of time periods, ICC, autocorrelation terms, mean and standard deviation of the outcome variable, effect size, etc) and a stochastic part (an error term). -->
@@ -24,9 +39,17 @@ These simulations require us to specify the following:
 - the parameter values expressing the distribution of the outcome variable under the alternative hypothesis
 - the variances. 
 
+<hr class="section-divider">
+
+## How power is calculated
+
 Based on the pre-specified model, we generate our synthetic data and run the estimation on these data a large number of times. In each round of the simulations we obtain a p-value. Power is then calculated as the proportion of p-values that are lower than the desired cutoff value $\alpha$.
 
 Note that we have to pay attention to cluster the standard errors appropriately for designs with clustered treatment assignment or blocked designs, otherwise the t-statistics will be upward biased and we will obtain inflated power numbers.
+
+<hr class="section-divider">
+
+## A basic worked example
 
 As a starter, the most simple setup for a simulation would be to just draw from two different distributions and compare their means - the same way we did initially with the two sample hypothesis testing.
 The only thing we add is that we repeat this example n-times and store the t-statistic every time.

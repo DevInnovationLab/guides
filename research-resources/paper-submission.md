@@ -3,9 +3,12 @@ layout: default
 grand_parent: Research resources
 parent: Templates
 title: Paper submission checklist
+type: checklist
+audience: Researchers preparing a paper for journal submission
+last_reviewed: 2026-07-30
 ---
 
-# Paper submission checklist
+## Paper submission checklist
 
 ## Proof-read the text
 
@@ -51,6 +54,8 @@ title: Paper submission checklist
 [More on citation styles](https://pitt.libguides.com/citationhelp){: .btn .btn-more }{:target="_blank"} 
 [JEL classification system](https://www.aeaweb.org/econlit/jelCodes.php){: .btn .btn-more }{:target="_blank"}
 
+<hr class="section-divider">
+
 ## Review results and summary statistics tables 
 
 - [ ] All columns and rows clearly labeled.
@@ -84,6 +89,7 @@ title: Paper submission checklist
 
 [More on reviewing regression outputs](https://blogs.worldbank.org/impactevaluations/crowd-sourced-checklist-top-10-little-things-drive-us-crazy-regression-output){: .btn .btn-more }{:target="_blank"}
 
+<hr class="section-divider">
 
 ## Review graphs and figures
 
@@ -102,6 +108,8 @@ title: Paper submission checklist
 
 [Chrome extension to simulate color blindness](https://chrome.google.com/webstore/detail/colorblindly/floniaahmccleoclneebhhmnjgdfijgg?hl=en#:~:text=Colorblindly&text=Simulates%20colorblindness%20in%20your%20web,those%20users%20have%20on%20websites){: .btn .btn-more }{:target="_blank"}
 
+<hr class="section-divider">
+
 ## Check author's names and affiliation
 
 - [ ] All names are spelled correctly.
@@ -114,6 +122,8 @@ title: Paper submission checklist
 - [ ] All exhibits are numbered and cited in numeric sequence.
 - [ ] All exhibits present in the paper are referenced in the text.
 - [ ] Appendices are numbered differently from core sections.
+
+<hr class="section-divider">
 
 ## Check bibliography
 

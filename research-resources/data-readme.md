@@ -3,9 +3,12 @@ layout: default
 grand_parent: Research resources
 parent: Templates
 title: Data dictionary template
+type: template
+audience: Anyone documenting a dataset with a data dictionary / README
+last_reviewed: 2026-07-30
 ---
 
-# Auto dataset
+## Auto dataset
 
 ## Summary
 
@@ -30,6 +33,8 @@ title: Data dictionary template
   - Field notes
   - Quality assurance protocols
   - Sampling design and procedure                                          
+
+<hr class="section-divider">
 
 ## Variable dictionary
 

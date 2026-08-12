@@ -4,17 +4,23 @@ title: Individual randomization
 grand_parent: Research resources
 parent: Power calculations
 nav_order: 11
+type: reference
+audience: Anyone at DIL computing a minimum detectable effect or required sample size for a study randomized at the individual level
+last_reviewed: 2026-07-30
 ---
 
 ## Individual Level Randomization
 
-
+<div class="ref-summary" markdown="1">
 We will look at both continuous and binary outcomes when the treatment is assigned to individuals.
 In the next section we will then look at these two cases when the treatment is assigned at a cluster or group level.
 Everything else equal, this will lead to a decrease in power due to the non-independence of units within each group.
 We therefore generally would prefer to design a study that allows us to randomize at the individual level.
+</div>
 
-### Continuous Outcomes
+<hr class="section-divider">
+
+## Continuous Outcomes
 
 In order to test whether an RCT with simple randomization had a significant effect, in theory one does not even need a regression.
 A simple difference in means by treatment status is unbiased for the average effect.
@@ -56,7 +62,26 @@ In all of the above we implicitly assumed that the treatment has only an effect 
 
 <!-- shiny app with individual - cont and binary with tabs? - HERE -->
 
-### Binary Outcomes
+### Start with a scenario
+
+> A pilot suggests the outcome has standard deviation $$\sigma = 10$$. You want to detect a difference in means of $$\delta = 4$$ with 80% power ($$1-\beta = 0.8$$) at the standard 5% two-sided significance level ($$\alpha = 0.05$$), which correspond to the standard normal critical values $$t_\beta \approx 0.84$$ and $$t_{\frac{\alpha}{2}} \approx 1.96$$.
+{: .example}
+
+Using the sample size formula above, how many individuals do you need in each of the treatment and control groups?
+
+<details markdown="1">
+<summary>Work it out, then expand</summary>
+
+Plugging into $$n^* = 2\left(t_\beta + t_{\frac{\alpha}{2}}\right)^2\frac{\sigma^2}{\delta^2}$$:
+
+$$n^* = 2(0.84+1.96)^2 \frac{10^2}{4^2} = 2(2.8)^2 \frac{100}{16} \approx 98.$$
+
+So you would need about 98 individuals in each group, for a total sample size $$N^* \approx 196$$. This is the familiar "16 rule of thumb" in disguise: for $$\alpha = 0.05$$ and 80% power, $$\left(t_\beta + t_{\frac{\alpha}{2}}\right)^2 \approx 7.84$$, so the total-sample-size expression collapses to roughly $$n^* \approx 16 \frac{\sigma^2}{\delta^2}$$ per group when treatment and control are the same size.
+</details>
+
+<hr class="section-divider">
+
+## Binary Outcomes
 
 For continuous outcomes, we do have to come up with an estimate for the standard deviation of the outcome variable.
 Sometimes this can be difficult if little prior work exists and often a pilot is the only good way to get a good sense for how much the variable of interest is going to deviate.

@@ -4,6 +4,9 @@ title: There’s always more to learn
 grand_parent: Data principles
 parent: Writing code
 nav_order: 9
+type: principle
+audience: Anyone at DIL writing or reviewing code or data work
+last_reviewed: 2026-07-30
 ---
 
 ## There's always more to learn

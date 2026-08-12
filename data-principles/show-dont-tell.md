@@ -4,6 +4,9 @@ title: Show, don’t (just) tell
 grand_parent: Data principles
 parent: Working with data
 nav_order: 3
+type: principle
+audience: Anyone at DIL writing or reviewing code or data work
+last_reviewed: 2026-07-30
 ---
 
 ## Show, don't (just) tell
