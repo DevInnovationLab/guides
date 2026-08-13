@@ -51,12 +51,7 @@ Every arrow between stages rests on an assumption, for instance that the curricu
 > Enumerators report that the question goes fine in the field. Nobody refuses it, nobody asks for clarification, and the completion rate is high.
 {: .example}
 
-What is wrong here?
-
-<details markdown="1">
-<summary>Think it through, then expand</summary>
-
-Nothing in the field logs will flag this question, and that is the problem. Three separate terms are doing undefined work:
+What is wrong here? Nothing in the field logs will flag this question, and that is the problem. Three separate terms are doing undefined work:
 
 * **"How often"** has no unit and no reference period. One respondent answers for a typical week, another for the last few days, another gives a general disposition.
 * **"Treat"** covers boiling, chlorine tablets, filtering, and letting sediment settle. Two households doing entirely different things both answer "always."
@@ -65,7 +60,6 @@ Nothing in the field logs will flag this question, and that is the problem. Thre
 Two respondents behaving identically can give different answers, and two respondents behaving differently can give the same one. The variation you end up analyzing is partly variation in interpretation.
 
 Notice what is not the fix. Adding response options such as *always / sometimes / never* makes the answers tidier without making them comparable, because the ambiguity is in the question rather than the scale. The fix is to name one specific observable action and a fixed window: *In the past 7 days, on how many days did you add chlorine to your household's stored drinking water?*
-</details>
 
 <hr class="section-divider">
 
@@ -173,223 +167,183 @@ Eight recurring failures in question design. Each row links to the worked exampl
 
 ## Worked examples
 
-Twenty examples, all drawn from a chlorine testing survey. Each gives the flawed question, the problem, and a revision. Read the flawed version and diagnose it before expanding.
+Twenty examples, all drawn from a chlorine testing survey. Each gives the flawed question, the problem, and a revision.
 
 ### Vagueness
 
-<details markdown="1">
-<summary><b>Example 1.</b> How often do you treat your household's drinking water?</summary>
+**Example 1.** *How often do you treat your household's drinking water?*
 
 **Problem.** "How often," "treat," and "drinking water" can each mean something different to each respondent. Boiling or chlorine tablets? Which container?
 
 **Revised.** *In the past 7 days, on how many days did you add chlorine to your household's stored drinking water using the color disc or colorimeter kit?*
 
 **Change.** One specific defined practice and a fixed 7-day recall window.
-</details>
 
-<details markdown="1">
-<summary><b>Example 2.</b> Is your household's water storage container clean? (Yes / No)</summary>
+**Example 2.** *Is your household's water storage container clean? (Yes / No)*
 
 **Problem.** "Clean" is undefined. Visibly clean, disinfected, or recently washed?
 
 **Revised.** *Did you wash this water storage container with soap and water in the past 7 days? (Yes / No)*
 
 **Change.** One specific observable action in a fixed window.
-</details>
 
-<details markdown="1">
-<summary><b>Example 3.</b> How long do you usually store water before drinking it?</summary>
+**Example 3.** *How long do you usually store water before drinking it?*
 
 **Problem.** "Usually" is imprecise and no unit is given. Hours or days?
 
 **Revised.** *About how many hours passed between when this water was collected and now?*
 
 **Change.** One countable unit and a clear reference point.
-</details>
 
 ### Double-barreled questions
 
-<details markdown="1">
-<summary><b>Example 4.</b> Did you rinse the comparator vial and confirm the chlorine reading before recording it? (Yes / No)</summary>
+**Example 4.** *Did you rinse the comparator vial and confirm the chlorine reading before recording it? (Yes / No)*
 
 **Problem.** Two separate actions in one yes/no. A "no" does not identify which step was skipped.
 
 **Revised.** *Q7a. Did you rinse the comparator vial with sample water before testing? (Yes / No)* and *Q7b. Did you confirm the chlorine reading by reading it a second time? (Yes / No)*
 
 **Change.** One idea per question, so a "no" localizes the failure.
-</details>
 
-<details markdown="1">
-<summary><b>Example 5.</b> Is your household's stored water container covered and free of visible dirt? (Yes / No)</summary>
+**Example 5.** *Is your household's stored water container covered and free of visible dirt? (Yes / No)*
 
 **Problem.** Two separate conditions in one yes/no.
 
 **Revised.** *Q14a. Is your household's stored water container covered? (Yes / No)* and *Q14b. Do you see any visible dirt or debris in the stored water? (Yes / No)*
 
 **Change.** One condition per question.
-</details>
 
-<details markdown="1">
-<summary><b>Example 6.</b> Did the enumerator check the test kit contents and confirm none were expired? (Yes / No)</summary>
+**Example 6.** *Did the enumerator check the test kit contents and confirm none were expired? (Yes / No)*
 
 **Problem.** Two separate checks, completeness and expiry, in one yes/no.
 
 **Revised.** *Q43a. Are all listed items present in the test kit box? (Yes / No)* and *Q43b. Are any of the reagent sachets past their expiration date? (Yes / No)*
 
 **Change.** Each check gets its own question.
-</details>
 
 ### Recall bias
 
-<details markdown="1">
-<summary><b>Example 7.</b> How many times did your household boil or treat its drinking water last month?</summary>
+**Example 7.** *How many times did your household boil or treat its drinking water last month?*
 
 **Problem.** A month is too long to recall accurately, and unusual days such as a visit from guests or an illness scare are remembered more vividly than routine ones.
 
 **Revised.** *In the past 7 days, on how many days did your household boil or chemically treat its drinking water?*
 
 **Change.** A window respondents can reconstruct.
-</details>
 
-<details markdown="1">
-<summary><b>Example 8.</b> About how many days ago was the water in this container collected?</summary>
+**Example 8.** *About how many days ago was the water in this container collected?*
 
 **Problem.** An open, unbounded recall question invites guessing.
 
 **Revised.** *Was the water in this container collected today, yesterday, or more than 2 days ago?*
 
 **Change.** Short bounded categories rather than an open estimate.
-</details>
 
-<details markdown="1">
-<summary><b>Example 9.</b> In the past year, how many times has your household run out of chlorine tablets or reagent?</summary>
+**Example 9.** *In the past year, how many times has your household run out of chlorine tablets or reagent?*
 
 **Problem.** A year is too long to recall accurately for a minor recurring event.
 
 **Revised.** *In the past 30 days, has your household run out of chlorine tablets or reagent? (Yes / No)*
 
 **Change.** A shorter window and a simpler response format.
-</details>
 
 ### Framing within the questionnaire
 
-<details markdown="1">
-<summary><b>Example 10.</b> Q12 asks whether the storage container may be contaminated; Q18 asks for an overall rating of drinking water safety.</summary>
+**Example 10.** *Q12 asks whether the storage container may be contaminated; Q18 asks for an overall rating of drinking water safety.*
 
 **Problem.** Primed to think about contamination, respondents rate overall safety lower than they otherwise would. The rating measures the effect of Q12 as much as the state of the water.
 
 **Revised.** The overall safety rating comes first in the module, before any question about possible contamination, separated by neutral buffer questions.
 
 **Change.** Reordering removes the prime.
-</details>
 
-<details markdown="1">
-<summary><b>Example 11.</b> Q9 asks about diarrhea in the past 2 weeks; Q15 asks how satisfied the respondent is with drinking water quality.</summary>
+**Example 11.** *Q9 asks about diarrhea in the past 2 weeks; Q15 asks how satisfied the respondent is with drinking water quality.*
 
 **Problem.** Primed to think about illness, respondents rate satisfaction lower than they otherwise would.
 
 **Revised.** The satisfaction question comes first in the module, before any question about diarrhea or illness, separated by neutral buffer questions.
 
 **Change.** The satisfaction rating reflects the water rather than a recent illness.
-</details>
 
 ### Anchoring bias
 
-<details markdown="1">
-<summary><b>Example 12.</b> What factors do you think affect your chlorine test results? <i>If respondent is unsure, suggest "reagent age" or "not waiting long enough."</i></summary>
+**Example 12.** *What factors do you think affect your chlorine test results? If respondent is unsure, suggest "reagent age" or "not waiting long enough."*
 
 **Problem.** The suggested examples become the answer. What comes back is a measure of what the enumerator planted rather than what the respondent believes.
 
 **Revised.** Same question, with the instruction *let the respondent answer unprompted. Record verbatim, then ask "Anything else?" up to three times.*
 
 **Change.** The respondent generates the list.
-</details>
 
 ### Presumptions
 
-<details markdown="1">
-<summary><b>Example 13.</b> How would you rate the free chlorine reading from your test this morning? (Very good / Acceptable / Concerning)</summary>
+**Example 13.** *How would you rate the free chlorine reading from your test this morning? (Very good / Acceptable / Concerning)*
 
 **Problem.** Assumes the household ran a chlorine test this morning.
 
 **Revised.** *Q10a. Did you or anyone in your household test the drinking water for chlorine this morning? (Yes / No)* then *Q10b. [If yes] How would you rate that free chlorine reading? (Very good / Acceptable / Concerning)*
 
 **Change.** A filter question with a skip pattern for "no."
-</details>
 
-<details markdown="1">
-<summary><b>Example 14.</b> What type of container do you use to store your treated water?</summary>
+**Example 14.** *What type of container do you use to store your treated water?*
 
 **Problem.** Assumes the household treats its water at all.
 
 **Revised.** *Q25a. Do you treat your household's drinking water in any way? (Yes / No)* then *Q25b. [If yes] What type of container do you use to store that treated water?*
 
 **Change.** A filter question establishes the premise.
-</details>
 
-<details markdown="1">
-<summary><b>Example 15.</b> How would you rate the color of the water sample you collected this morning? (Clear / Slightly cloudy / Cloudy)</summary>
+**Example 15.** *How would you rate the color of the water sample you collected this morning? (Clear / Slightly cloudy / Cloudy)*
 
 **Problem.** Assumes a sample was collected this morning.
 
 **Revised.** *Q45a. Did you or anyone in your household collect a water sample this morning? (Yes / No)* then *Q45b. [If yes] How would you rate the color of that sample? (Clear / Slightly cloudy / Cloudy)*
 
 **Change.** The question is only asked about a sample that exists.
-</details>
 
 ### Social desirability bias
 
-<details markdown="1">
-<summary><b>Example 16.</b> Do you always follow the full test protocol (rinsing, timing, and double-reading) when testing chlorine residual? (Always / Sometimes / Never)</summary>
+**Example 16.** *Do you always follow the full test protocol (rinsing, timing, and double-reading) when testing chlorine residual? (Always / Sometimes / Never)*
 
 **Problem.** Respondents may overstate adherence to avoid seeming careless.
 
 **Revised.** *In your last 5 chlorine tests, how many times did you wait the full 2 minutes before reading the result?*
 
 **Change.** A neutral count of specific past instances instead of a self-assessment of doing it right.
-</details>
 
-<details markdown="1">
-<summary><b>Example 17.</b> Do you treat your drinking water before storing it? (Yes / No)</summary>
+**Example 17.** *Do you treat your drinking water before storing it? (Yes / No)*
 
 **Problem.** A direct yes/no about an approved health behavior invites overstatement.
 
 **Revised.** *In the past 7 days, on how many of the days did you treat water before storing it?*
 
 **Change.** A count rather than a binary, which is harder to round up.
-</details>
 
-<details markdown="1">
-<summary><b>Example 18.</b> Did you dispose of the leftover test-sample water exactly as instructed? (Yes / No)</summary>
+**Example 18.** *Did you dispose of the leftover test-sample water exactly as instructed? (Yes / No)*
 
 **Problem.** A direct compliance question invites a socially desirable "yes."
 
 **Revised.** *Where did you pour out the leftover test-sample water after finishing the test today?*
 
 **Change.** An open behavior-based question instead of a compliance judgment.
-</details>
 
 ### Questionnaire exhaustion
 
-<details markdown="1">
-<summary><b>Example 19.</b> At question 52 of 65: repeat the free- and total-chlorine steps at low range, then again at high range, rating confidence in each of the 4 resulting readings.</summary>
+**Example 19.** *At question 52 of 65: repeat the free- and total-chlorine steps at low range, then again at high range, rating confidence in each of the 4 resulting readings.*
 
 **Problem.** After four near-identical testing blocks, enumerators and respondents rush, skip steps, or record low-effort answers. The readings that matter most are collected when attention is lowest.
 
 **Revised.** The four low and high range blocks are consolidated into one block with the range auto-selected by the instrument. Confidence is rated once rather than four times, moving the module from question 52 of 65 to question 18 of 40.
 
 **Change.** The highest-value readings are captured while attention is still fresh.
-</details>
 
-<details markdown="1">
-<summary><b>Example 20.</b> The same 6-item "confidence in this reading" battery repeated identically after each of 4 readings, for 24 near-duplicate ratings in a row.</summary>
+**Example 20.** *The same 6-item "confidence in this reading" battery repeated identically after each of 4 readings, for 24 near-duplicate ratings in a row.*
 
 **Problem.** Identical repetition exhausts respondents and enumerators alike, and produces straight-lining rather than information.
 
 **Revised.** The confidence battery is asked once, after all readings are complete, referring respondents back to their own recorded values.
 
 **Change.** One considered answer instead of four rushed ones.
-</details>
 
 <hr class="section-divider">
 
@@ -403,8 +357,6 @@ The order in which the elements above are applied to a new instrument.
 4. Draft two candidate indicators for that outcome and check each against valid, reliable, feasible, and specific.
 5. Draft one survey question for the strongest indicator, including response options.
 6. Check the question against each of the eight threats to inference.
-
-A research question to practice on: *Does access to weather forecasts change farmers' planting decisions?*
 
 <hr class="section-divider">
 
